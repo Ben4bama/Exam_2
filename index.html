@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problme.css"/>
+    <script src="js/Exam2problem.js"></script>
+</head>
+
+<body>
+    <h1>Exam 2</h1>
+        <br>
+            <select onchange="Menuchoice()" id="menu">
+                <option>Please select an option</option>
+                <option>Display Category List</option>
+                <option>Create a Category</option>
+                <option>Change Category Description</option>
+                <option>Delete a Category</option>
+                <option>About Me</option>
+            </select>
+        <hr>
+    <section id="sec_1">
+        <h2>Get Customer List</h2>
+        <button onclick="GetCustList()" id="custlist">Display Customer List</button>
+            <hr>
+        <label id="custlistdisplay">Display Customer List here</label>
+    </section>
+    
+    <section id="sec_2">
+        <h2>Create a Category</h2>
+        <label>Please Enter a Category Name: </label>
+        <input type="text" id="CatName">
+            <br>
+        <label>Please Enter Category Description: </label>
+        <input type="text" id="CatDesc">
+            <br>
+        <button onclick="CreateCategory()" id="NewCat">Add a New Category</button>
+            <br>
+                <hr>
+            <br>
+        <label id="result_1">The operation's result will display here.</label>
+    </section>
+    
+    <section id="sec_3">
+        <h2>Change Category Description</h2>
+        <label>Please Enter a Category ID: </label>
+        <input type="number" id="CatID">
+            <br>
+        <label>Please Enter a New Category Description: </label>
+        <input type="text" id="NewCatDesc">
+        <button onclick="ChangeCategoryDescription()" id="ChangeDesc">Change Category Description</button>
+            <br>
+                <hr>
+            <br>
+        <label id="result_2">The operation's result will display here.</label>
+    </section>
+    
+    <section id="sec_4">
+        <h2>Delete a Category</h2>
+        <label>Please Enter the Category ID to be Deleted</label>
+        <input type="text" id="DelcstID">
+            <br>
+        <button onclick="DeleteCatID()" id="DelCatID">Delete Category</button>
+            <br>
+                <hr>
+            <br>
+        <label id="result_3">The operation's result will display here.</label>
+    </section>
+    
+    <section id="sec_5">
+        <h2>About Me</h2>
+        <p>
+        Mr. Rivera,<br>
+            You have been a fantastic teacher and I have learned so much in your class
+            and I appriciate all your hard work.
+            I hope I can take another one of your classes in the future.
+            <br>
+            <br>
+            Thanks again,<br>
+            Ben Crenshaw
+            <br>
+            <br>
+            Go Blazeres!
+        </p>
+    </section>
+
+
+</body>
+</html>
